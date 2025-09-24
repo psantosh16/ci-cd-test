@@ -27,8 +27,8 @@ jobs:
       - name: Run JAR file
         run: java -jar target/ci-cd-test-1.0-SNAPSHOT.jar
 
-      - name: Upload JAR artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: my-app-jar
-          path: target/*.jar
+      # - name: Upload JAR artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: my-app-jar
+      #     path: target/*.jar
